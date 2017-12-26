@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UnderLineTextview</string>
+    <string name="phone"><u>联系电话:1234562568</u></string>
+    <string name="phone2">联系电话:222222</string>
+</resources>

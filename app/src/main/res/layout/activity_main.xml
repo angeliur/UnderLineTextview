@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.underlinetextview.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:textColorLink="#00f"
+        android:text="@string/phone2"/>
+    <!--autoLink设置phone，email等，textColorLink设置链接显示的颜色-->
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--每行都有下划线的textview-->
+    <com.demo.underlinetextview.UnderLineTextview
+        android:id="@+id/ul_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:underlineColor="#0f0"
+        app:underlineWidth="3dp"/>
+
+    <!--只有最后一行下面才有下划线的textview-->
+    <com.demo.underlinetextview.UnderLineTextview2
+        android:id="@+id/ul_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textSize="20sp"
+        app:underline_color="#f00"
+        app:underline_height="2dp"/>
+
+</LinearLayout>
